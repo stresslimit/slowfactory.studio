@@ -1,5 +1,9 @@
 
-export default (sayings, element) => {
+//  <span id="js-typewriter" data-words="these,words,will,be typed out"></span>
+
+export default (element) => {
+
+  let sayings = element.dataset.words.split(",")
 
   init(element)
 
@@ -16,11 +20,11 @@ export default (sayings, element) => {
     var new_text = text.substr(0, letter_counter)
     var last_counter = text.length > letter_counter
     // attention global
-    element.innerHTML = `${new_text}${ last_counter ? '|' : '' }`
+    element.innerHTML = `${new_text}${ last_counter ? '|' : '.' }`
     if ( last_counter )
       setTimeout(type, 40, text, letter_counter+1, word_counter)
     else
-      setTimeout(init, 1200, word_counter+1)
+      setTimeout(init, 2000, word_counter+1)
   }
 
 }

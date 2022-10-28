@@ -66,6 +66,9 @@ a:hover,
 .superlink {
   text-decoration: none;
 }
+.text-xl {
+  font-size: 2em;
+}
 .text-lg {
   font-size: 1.5em;
 }
@@ -127,7 +130,7 @@ p.title-xl, p.title-lg {
 
 @media (--viewport-xs-only) {
   .title-xxl, .title-alt-xxl {
-    font-size: 4.5em;
+    font-size: 3.8em;
   }
   .title-xl {
     font-size: 3em;
@@ -146,6 +149,9 @@ p.title-xl, p.title-lg {
   }
   .title-card {
     font-size: 2em;
+  }
+  .text-xl {
+    font-size: 1.5em;
   }
   .text-lg {
     font-size: 1.2em;
